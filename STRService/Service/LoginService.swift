@@ -13,12 +13,12 @@ public struct User: Codable {
     let username: String
 }
 
-struct LoginService: STRService {
+public class LoginService: STRService {
     typealias ResponseType = [User]
-    var data : RequestData {
+    public var data : RequestData {
         return RequestData(path: "https://jsonplaceholder.typicode.com/users")
     }
     
-    
+    public init(){}
 }
 

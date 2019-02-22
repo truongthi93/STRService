@@ -8,32 +8,38 @@
 
 import Foundation
 
-public protocol STRDelegate {
-    func errorHandler(error: Error?)
-}
-
-
-struct Config {
+public struct Config {
     var shouldRecallWhenExpire: Bool = false
+    
+    public init(){}
 }
 
+public protocol STRDelegate {
+    func showError(error: Error?)
+    func getConfig() -> Config
+}
+
+extension STRDelegate {
+    func setupSTR(delegate:STRDelegate) {
+        STRConfig.shared.setupSTRService(config: self.getConfig(), delegate: delegate)
+    }
+}
 
 public class STRConfig {
     
-    var config : Config? = nil
+    public static let shared : STRConfig = {
+        let instance = STRConfig()
+        return instance
+    }()
+    
+    var config : Config?
     
     var delegate: STRDelegate?
     
-    
-    
-    
-    func setupSTRService(config : Config) {
+    public func setupSTRService(config : Config,delegate:STRDelegate) {
         self.config = config
+        self.delegate = delegate
         STRNetworkManager.shared.setupNetwork()
     }
-    
-    
-    
-    
-    
 }
+
