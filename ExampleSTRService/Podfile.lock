@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.0)
+  - STRService (0.0.1):
+    - Alamofire (~> 4.8.0)
+
+DEPENDENCIES:
+  - STRService (from `https://github.com/QuyenNguyenThe/STRService`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  STRService:
+    :git: https://github.com/QuyenNguyenThe/STRService
+
+CHECKOUT OPTIONS:
+  STRService:
+    :commit: c74a9e9a3bda03521e1a428d57eb5b03e31de787
+    :git: https://github.com/QuyenNguyenThe/STRService
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  STRService: 6dcb537f4de0e916e0a76dad166b33bf7d521d4f
+
+PODFILE CHECKSUM: 3b988da4b6a3ebca91ecc9c0072af35b023c9817
+
+COCOAPODS: 1.6.0.beta.2
