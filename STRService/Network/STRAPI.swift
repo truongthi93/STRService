@@ -42,6 +42,7 @@ public struct RequestData {
 }
 
 public protocol STRService {
+    
     var data: RequestData { get }
 }
 
@@ -60,7 +61,7 @@ public struct URLSessionNetworkDispatcher {
         
         STRNetworkManager.shared.networkManager?.request(requestData.path, method: requestData.method, parameters: parameters as Parameters, encoding: JSONEncoding.default, headers: requestData.headers).responseJSON {
             response in
-            
+
             self.responseHandler(response: response, onSuccess: { (dic) in
                 onSuccess(dic)
             }, onError: { (error) in
@@ -128,7 +129,6 @@ public extension STRService {
     
         
         dispatcher.dispatch(requestData: self.data, onSuccess: { (data) in
-            
             onSuccess(data)
             
         }) { (error) in
