@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.8.0)
+  - ObjectMapper (3.4.2)
+  - STRService (0.0.1):
+    - Alamofire (~> 4.8.0)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - STRService (from `https://github.com/QuyenNguyenThe/STRService`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ObjectMapper
+
+EXTERNAL SOURCES:
+  STRService:
+    :git: https://github.com/QuyenNguyenThe/STRService
+
+CHECKOUT OPTIONS:
+  STRService:
+    :commit: 596f00c1ea8cb050f0de89885e25b986f9f044fc
+    :git: https://github.com/QuyenNguyenThe/STRService
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  STRService: 6dcb537f4de0e916e0a76dad166b33bf7d521d4f
+
+PODFILE CHECKSUM: 42eb51dc4c778f3cccce8e5473ba414184aa05c7
+
+COCOAPODS: 1.6.0.beta.2
