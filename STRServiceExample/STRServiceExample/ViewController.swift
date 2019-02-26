@@ -12,11 +12,35 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setTapGesture()
     }
     func testLoginService() {
-        
+        LoginService().execute(onSuccess: { (any) in
+            print(any)
+        }) { (error) in
+            print(error)
+        }
     }
-
+    func setTapGesture() {
+        let tapGest = UITapGestureRecognizer(target: self, action: #selector(tapped))
+        view.addGestureRecognizer(tapGest)
+    }
+    func testListChargeService() {
+        ListChargeService().execute(onSuccess: { (dic) in
+            print(dic)
+        }) { (error) in
+            print(error)
+        }
+    }
+    @objc func tapped() {
+        testLoginService()
+    }
+    @IBAction func abtnListPaymens(_ sender: Any) {
+        testListChargeService()
+    }
+    @IBAction func abtnUsers(_ sender: Any) {
+        testLoginService()
+    }
+    
 }
 

@@ -5,6 +5,7 @@ target 'STRServiceExample' do
   use_frameworks!
 
 pod 'STRService',:git => 'https://github.com/QuyenNguyenThe/STRService'
+
 pod 'ObjectMapper'
   target 'STRServiceExampleTests' do
     inherit! :search_paths

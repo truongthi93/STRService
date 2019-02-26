@@ -19,7 +19,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   STRService:
-    :commit: 596f00c1ea8cb050f0de89885e25b986f9f044fc
+    :commit: f30afe5ac06cccd2aeb41b819eacc19db73fc4e3
     :git: https://github.com/QuyenNguyenThe/STRService
 
 SPEC CHECKSUMS:
@@ -27,6 +27,6 @@ SPEC CHECKSUMS:
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   STRService: 6dcb537f4de0e916e0a76dad166b33bf7d521d4f
 
-PODFILE CHECKSUM: 42eb51dc4c778f3cccce8e5473ba414184aa05c7
+PODFILE CHECKSUM: d8ba3fe5477909853082992892a5106bf318f721
 
 COCOAPODS: 1.6.0.beta.2

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import STRService
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        STRConfig.shared.setupSTRService(config: Config(), delegate: self )
         return true
     }
 
@@ -43,4 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-
+extension AppDelegate: STRDelegate {
+    func showError(error: Error?) {
+        print(error)
+    }
+    
+    func getConfig() -> Config {
+        return Config()
+    }
+}

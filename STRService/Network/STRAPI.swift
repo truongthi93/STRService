@@ -27,12 +27,12 @@ public enum ConnError: Swift.Error {
 public struct RequestData {
     public let path: String
     public let method: HTTPMethod
-    public var params: [String:Any?]?
+    public var params: [String:Any]?
     public let headers: [String: String]?
     
     init(path: String,
          method: HTTPMethod = .get,
-         params: [String: Any?]? = nil,
+         params: [String: Any]? = nil,
          headers: [String: String]? = nil) {
         self.path = path
         self.method = method
@@ -55,13 +55,10 @@ public struct URLSessionNetworkDispatcher {
     private init() {}
     
     public func dispatch(requestData: RequestData, onSuccess: @escaping (Any) -> Void, onError: @escaping (Error) -> Void) {
-//        guard let parameters = requestData.params else {
-//            onError(ConnError.dataError)
-//            return
-//        }
-        let parameters = ["d":"d"]
+
         
-        STRNetworkManager.shared.networkManager?.request(requestData.path, method: requestData.method, parameters: parameters as Parameters, encoding: JSONEncoding.default, headers: requestData.headers).responseJSON {
+        
+        STRNetworkManager.shared.networkManager?.request(requestData.path, method: requestData.method, parameters: requestData.params , encoding: JSONEncoding.default, headers: requestData.headers).responseJSON {
             response in
 
             self.responseHandler(response: response, onSuccess: { (dic) in
