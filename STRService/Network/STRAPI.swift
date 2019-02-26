@@ -8,7 +8,8 @@
 
 import Foundation
 import Alamofire
-
+import ObjectMapper
+import Network
 public enum ConnError: Swift.Error {
     case invalidURL
     case noData
@@ -42,11 +43,14 @@ public struct RequestData {
 }
 
 public protocol STRService {
-    
+    associatedtype ResponseType: Mappable
     var data: RequestData { get }
 }
-
+public protocol NetworkDispatcher {
+    func dispatch(request: RequestData, onSuccess: @escaping (Any) -> Void, onError: @escaping (Error) -> Void)
+}
 public struct URLSessionNetworkDispatcher {
+    
     
     public static let instance = URLSessionNetworkDispatcher()
     
@@ -124,12 +128,13 @@ public struct URLSessionNetworkDispatcher {
 public extension STRService {
     
     public func execute(dispatcher: URLSessionNetworkDispatcher = URLSessionNetworkDispatcher.instance,
-                        onSuccess: @escaping (Any) -> Void,
+                        onSuccess: @escaping (ResponseType) -> Void,
                         onError: @escaping (Error) -> Void) {
     
         
         dispatcher.dispatch(requestData: self.data, onSuccess: { (data) in
-            onSuccess(data)
+            guard let objects = Mapper<User>().mapArray(JSONObject: data) else { return}
+            onSuccess(objects)
             
         }) { (error) in
             DispatchQueue.main.async {
