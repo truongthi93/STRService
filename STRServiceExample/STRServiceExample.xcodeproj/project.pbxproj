@@ -14,6 +14,7 @@
 		371169412224DD7D00E5B26E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3711693F2224DD7D00E5B26E /* LaunchScreen.storyboard */; };
 		3711694C2224DD7D00E5B26E /* STRServiceExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711694B2224DD7D00E5B26E /* STRServiceExampleTests.swift */; };
 		371169572224ED5F00E5B26E /* ListChargeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371169562224ED5F00E5B26E /* ListChargeService.swift */; };
+		3711695C2225212F00E5B26E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3711695B2225212F00E5B26E /* LoginService.swift */; };
 		6470A37D3E9C6CF294F4E333 /* Pods_STRServiceExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D1A91F0EBDFCC2709CA35E /* Pods_STRServiceExample.framework */; };
 		880EBA874B6BD507D777DD26 /* Pods_STRServiceExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE43572FD4F1CC9E90DC6AE /* Pods_STRServiceExampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		3711694B2224DD7D00E5B26E /* STRServiceExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRServiceExampleTests.swift; sourceTree = "<group>"; };
 		3711694D2224DD7D00E5B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371169562224ED5F00E5B26E /* ListChargeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListChargeService.swift; sourceTree = "<group>"; };
+		3711695B2225212F00E5B26E /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		51EEE58F3732512A7169E74D /* Pods-STRServiceExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STRServiceExample.debug.xcconfig"; path = "Target Support Files/Pods-STRServiceExample/Pods-STRServiceExample.debug.xcconfig"; sourceTree = "<group>"; };
 		53D1A91F0EBDFCC2709CA35E /* Pods_STRServiceExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STRServiceExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59428159A2196A9B693B256B /* Pods-STRServiceExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STRServiceExampleTests.release.xcconfig"; path = "Target Support Files/Pods-STRServiceExampleTests/Pods-STRServiceExampleTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				371169362224DD7600E5B26E /* AppDelegate.swift */,
 				371169382224DD7600E5B26E /* ViewController.swift */,
+				3711695B2225212F00E5B26E /* LoginService.swift */,
 				3711693A2224DD7600E5B26E /* Main.storyboard */,
 				3711693D2224DD7D00E5B26E /* Assets.xcassets */,
 				3711693F2224DD7D00E5B26E /* LaunchScreen.storyboard */,
@@ -310,6 +313,7 @@
 			files = (
 				371169392224DD7600E5B26E /* ViewController.swift in Sources */,
 				371169572224ED5F00E5B26E /* ListChargeService.swift in Sources */,
+				3711695C2225212F00E5B26E /* LoginService.swift in Sources */,
 				371169372224DD7600E5B26E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

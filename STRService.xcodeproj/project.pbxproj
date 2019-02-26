@@ -12,7 +12,6 @@
 		371168A7221F9FC700E5B26E /* STRService.h in Headers */ = {isa = PBXBuildFile; fileRef = 37116899221F9FC700E5B26E /* STRService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371168B5221FA49A00E5B26E /* STRAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371168B4221FA49A00E5B26E /* STRAPI.swift */; };
 		371168B7221FA71B00E5B26E /* STRNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371168B6221FA71B00E5B26E /* STRNetworkManager.swift */; };
-		371168BB221FB3C300E5B26E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371168BA221FB3C300E5B26E /* LoginService.swift */; };
 		371168BD221FB4F300E5B26E /* STRConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371168BC221FB4F300E5B26E /* STRConfig.swift */; };
 		6DCB2F2AFBBD79D6593A53AC /* Pods_STRServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1777BE3A1B96E8CF6C6172C7 /* Pods_STRServiceTests.framework */; };
 		8C141CDCBBE3B15D05A52420 /* Pods_STRService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11DB409409BCD29A43452AE5 /* Pods_STRService.framework */; };
@@ -40,7 +39,6 @@
 		371168A6221F9FC700E5B26E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		371168B4221FA49A00E5B26E /* STRAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRAPI.swift; sourceTree = "<group>"; };
 		371168B6221FA71B00E5B26E /* STRNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRNetworkManager.swift; sourceTree = "<group>"; };
-		371168BA221FB3C300E5B26E /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		371168BC221FB4F300E5B26E /* STRConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STRConfig.swift; sourceTree = "<group>"; };
 		40D77C8596CBF9F0DA0D7C99 /* Pods-STRService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STRService.debug.xcconfig"; path = "Target Support Files/Pods-STRService/Pods-STRService.debug.xcconfig"; sourceTree = "<group>"; };
 		A420FD4990298EA9D672BC6A /* Pods-STRServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STRServiceTests.release.xcconfig"; path = "Target Support Files/Pods-STRServiceTests/Pods-STRServiceTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 		37116898221F9FC700E5B26E /* STRService */ = {
 			isa = PBXGroup;
 			children = (
-				371168B9221FB38300E5B26E /* Service */,
 				371168B8221FB37600E5B26E /* Network */,
 				37116899221F9FC700E5B26E /* STRService.h */,
 				3711689A221F9FC700E5B26E /* Info.plist */,
@@ -125,14 +122,6 @@
 				371168BC221FB4F300E5B26E /* STRConfig.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		371168B9221FB38300E5B26E /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				371168BA221FB3C300E5B26E /* LoginService.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		B66258ADDC5DA6C8148FD2E0 /* Pods */ = {
@@ -306,7 +295,6 @@
 			files = (
 				371168B7221FA71B00E5B26E /* STRNetworkManager.swift in Sources */,
 				371168BD221FB4F300E5B26E /* STRConfig.swift in Sources */,
-				371168BB221FB3C300E5B26E /* LoginService.swift in Sources */,
 				371168B5221FA49A00E5B26E /* STRAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,9 @@
 PODS:
-  - Alamofire (4.8.0)
+  - Alamofire (4.8.1)
   - ObjectMapper (3.4.2)
   - STRService (0.0.1):
     - Alamofire (~> 4.8.0)
+    - ObjectMapper (~> 3.4.2)
 
 DEPENDENCIES:
   - ObjectMapper
@@ -19,13 +20,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   STRService:
-    :commit: f30afe5ac06cccd2aeb41b819eacc19db73fc4e3
+    :commit: 9c1fae6850a557a2d6a2414e7a57aa20ae02e2ab
     :git: https://github.com/QuyenNguyenThe/STRService
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
-  STRService: 6dcb537f4de0e916e0a76dad166b33bf7d521d4f
+  STRService: 83a5fbd01dc7720af42ef184a4d21f7620ef3ce2
 
 PODFILE CHECKSUM: d8ba3fe5477909853082992892a5106bf318f721
 

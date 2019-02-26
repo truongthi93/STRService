@@ -6,8 +6,8 @@
 //  Copyright © 2019 Quyen Nguyen The. All rights reserved.
 //
 
-import Foundation
 import ObjectMapper
+import STRService
 
 public struct User: Mappable {
     var id: Int?
