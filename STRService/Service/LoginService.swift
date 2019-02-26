@@ -7,12 +7,24 @@
 //
 
 import Foundation
-public struct User: Codable {
-    let id: Int
-    let username: String
+import ObjectMapper
+
+public struct User: Mappable {
+    var id: Int?
+    var username: String?
+    
+    public init?(map: Map) {
+    }
+    
+    mutating public func mapping(map: Map) {
+        username    <- map["username"]
+        id         <- map["id"]
+    }
 }
 
 public class LoginService: STRService {
+    public typealias ResponseType = User
+    
     public var data : RequestData {
         return RequestData(path: "https://jsonplaceholder.typicode.com/users")
     }

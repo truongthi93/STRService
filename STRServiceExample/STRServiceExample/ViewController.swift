@@ -26,11 +26,11 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tapGest)
     }
     func testListChargeService() {
-        ListChargeService().execute(onSuccess: { (dic) in
-            print(dic)
-        }) { (error) in
-            print(error)
-        }
+//        ListChargeService().execute(onSuccess: { (dic) in
+//            print(dic)
+//        }) { (error) in
+//            print(error)
+//        }
     }
     @objc func tapped() {
         testLoginService()

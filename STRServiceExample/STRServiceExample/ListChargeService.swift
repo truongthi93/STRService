@@ -8,10 +8,13 @@
 
 import Foundation
 import STRService
-class ListChargeService: STRService {
-    public var data : RequestData {
-        return RequestData(path: "https://apple-payment.herokuapp.com/listcharge")
-    }
-    
-    public init(){}
-}
+//class ListChargeService: STRService {
+//    typealias ResponseType = <#type#>
+//    
+//    public var data : RequestData {
+//        return RequestData(path: "https://apple-payment.herokuapp.com/listcharge")
+//    }
+//    
+//    public init(){}
+//}
+
